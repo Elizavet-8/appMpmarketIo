@@ -43,14 +43,20 @@ export default {
     ...layoutComputed,
     layoutType: {
       get() {
-        return this.$store ? this.$store.state.layout.layoutType : {} || {};
+        return document.documentElement.setAttribute(
+            "data-layout",
+            "horizontal"
+        );
       },
-      set(layout) {
-        localStorage.setItem("rightbar_isopen", true);
-        this.changeLayoutType({
-          layoutType: layout,
-        });
-      },
+      // get() {
+      //   return this.$store ? this.$store.state.layout.layoutType : {} || {};
+      // },
+      // set(layout) {
+      //   localStorage.setItem("rightbar_isopen", true);
+      //   this.changeLayoutType({
+      //     layoutType: layout,
+      //   });
+      // },
     },
     layoutWidth: {
       get() {
@@ -266,39 +272,39 @@ export default {
         }
       },
     },
-    layoutType: {
-      immediate: true,
-      deep: true,
-      handler(newVal, oldVal) {
-        if (newVal !== oldVal) {
-          switch (newVal) {
-            case "horizontal":
-              document.documentElement.setAttribute(
-                "data-layout",
-                "horizontal"
-              );
-              break;
-            case "vertical":
-              document.documentElement.setAttribute("data-layout", "vertical");
-              break;
-            case "twocolumn":
-              document.documentElement.setAttribute("data-layout", "twocolumn");
-              break;
-          }
-        }
-      },
-    },
+    // layoutType: {
+    //   immediate: true,
+    //   deep: true,
+    //   handler(newVal, oldVal) {
+    //     if (newVal !== oldVal) {
+    //       switch (newVal) {
+    //         case "horizontal":
+    //           document.documentElement.setAttribute(
+    //             "data-layout",
+    //             "horizontal"
+    //           );
+    //           break;
+    //         case "vertical":
+    //           document.documentElement.setAttribute("data-layout", "vertical");
+    //           break;
+    //         case "twocolumn":
+    //           document.documentElement.setAttribute("data-layout", "twocolumn");
+    //           break;
+    //       }
+    //     }
+    //   },
+    // },
   },
 };
 </script>
 
 <template>
   <div>
-    <div class="customizer-setting d-none d-md-block">
-      <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas" id="mdi-cog">
-        <i class="mdi mdi-spin mdi-cog-outline fs-22"></i>
-      </div>
-    </div>
+<!--    <div class="customizer-setting d-none d-md-block">-->
+<!--      <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas" id="mdi-cog">-->
+<!--        <i class="mdi mdi-spin mdi-cog-outline fs-22"></i>-->
+<!--      </div>-->
+<!--    </div>-->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
       <div
         class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
