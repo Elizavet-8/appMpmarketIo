@@ -19,6 +19,26 @@ function loadLocaleMessages() {
   return messages;
 }
 
+function checkDefaultLanguage() { //Определяем язык браузера
+  let matched = null;
+  let languages = Object.getOwnPropertyNames(loadLocaleMessages());
+  languages.forEach(lang => {
+    if (lang === navigator.language) {
+      matched = lang;
+    }
+  });
+  if (!matched) {
+    languages.forEach(lang => {
+      let languagePartials = navigator.language.split("-")[0];
+      if (lang === languagePartials) {
+        matched = lang;
+      }
+    });
+  }
+  return matched;
+}
+export const selectedLocale = localStorage.getItem('locale') || checkDefaultLanguage() || "ru";
+
 const setDateTimeFormats = {
   short: {
     year: 'numeric',
@@ -43,8 +63,11 @@ const dateTimeFormats = {
 };
 
 export default createI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || 'en',
-  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
+  locale: selectedLocale || "ru",
+  globalInjection: true,
+  fallbackLocale: "ru",
+  /*locale: process.env.VUE_APP_I18N_LOCALE || 'ru',
+  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'ru',*/
   messages: loadLocaleMessages(),
   dateTimeFormats,
 });
