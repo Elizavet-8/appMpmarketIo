@@ -1,5 +1,5 @@
 <script>
-localStorage.setItem("rightbar_isopen", true);
+localStorage.setItem("rightbar_isopen", false); //true
 import { layoutMethods, layoutComputed } from "@/state/helpers";
 import { SimpleBar } from "simplebar-vue3";
 

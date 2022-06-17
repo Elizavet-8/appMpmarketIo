@@ -11,7 +11,7 @@
   export default {
     data() {
       return {
-        languages: [{
+        languages: [/*{
             flag: require("@/assets/images/flags/us.svg"),
             language: "en",
             title: "English",
@@ -35,7 +35,7 @@
             flag: require("@/assets/images/flags/germany.svg"),
             language: "gr",
             title: "Deutsche",
-          },
+          },*/
           {
             flag: require("@/assets/images/flags/russia.svg"),
             language: "ru",
@@ -52,9 +52,7 @@
     components: {
       SimpleBar
     },
-
     methods: {
-
       isCustomDropdown() {
         //Search bar
         var searchOptions = document.getElementById("search-close-options");
@@ -187,6 +185,7 @@
     },
     computed: {},
     mounted() {
+      this.setLanguage("ru", "русский", require("@/assets/images/flags/russia.svg"));
       document.addEventListener("scroll", function () {
         var pageTopbar = document.getElementById("page-topbar");
         if (pageTopbar) {
