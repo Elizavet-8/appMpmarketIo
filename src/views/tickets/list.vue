@@ -18,7 +18,7 @@
 
   export default {
     page: {
-      title: "List",
+      title: "Support",
       meta: [{
         name: "description",
         content: appConfig.description
@@ -26,16 +26,7 @@
     },
     data() {
       return {
-        title: "List",
-        items: [{
-            text: "Tickets",
-            href: "/",
-          },
-          {
-            text: "List",
-            active: true,
-          },
-        ],
+        title: "Support",
         config: {
           enableTime: false,
           dateFormat: "d M, Y",
@@ -399,7 +390,7 @@
 
 <template>
   <Layout>
-    <PageHeader :title="title" :items="items" />
+    <PageHeader :title="title" />
     <div class="row">
       <div class="col-xxl-3 col-sm-6">
         <div class="card card-animate">

@@ -23,15 +23,6 @@
     data() {
       return {
         title: "Orders",
-        items: [{
-            text: "Ecommerce",
-            href: "/",
-          },
-          {
-            text: "Orders",
-            active: true,
-          },
-        ],
         page: 1,
         perPage: 8,
         pages: [],

@@ -1178,27 +1178,27 @@ export default {
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/">
+          <router-link class="nav-link menu-link" to="/orders">
             <span data-key="">Заказы</span>
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/">
+          <router-link class="nav-link menu-link" to="/products">
             <span data-key="">Товары</span>
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/">
+          <router-link class="nav-link menu-link" to="/purchases">
             <span data-key="">Закупки</span>
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/">
+          <router-link class="nav-link menu-link" to="/market">
             <span data-key="">Маркет</span>
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/">
+          <router-link class="nav-link menu-link" to="/finance">
             <span data-key="">Финансы</span>
           </router-link>
         </li>
