@@ -946,11 +946,11 @@
             <div class="dropdown-menu dropdown-menu-end">
               <!-- item-->
               <h6 class="dropdown-header">Welcome Anna!</h6>
-              <router-link class="dropdown-item" to="/">
+              <router-link class="dropdown-item" to="/pages/profile">
                 <i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
                 <span class="align-middle">Личный кабинет</span>
               </router-link>
-              <router-link class="dropdown-item" to="/">
+              <router-link class="dropdown-item" to="/pages/profile-setting">
                 <i class="bx bxs-cog text-muted fs-16 align-middle me-1"></i>
                 <span class="align-middle">Настройки</span>
               </router-link>
@@ -958,7 +958,7 @@
                 <i class="bx bxs-group text-muted fs-16 align-middle me-1"></i>
                 <span class="align-middle">Поддержка</span>
               </router-link>
-              <router-link class="dropdown-item" to="/">
+              <router-link class="dropdown-item" to="/pages/faqs">
                 <i class="bx bx-question-mark text-muted fs-16 align-middle me-1"></i>
                 <span class="align-middle">FAQ</span>
               </router-link>
