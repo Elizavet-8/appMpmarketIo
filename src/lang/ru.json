@@ -6,6 +6,21 @@
     "t-ecommerce": "Электронная торговля",
     "t-crypto": "Крипто",
     "t-projects": "Проекты",
+    "t-documents": "Документы",
+    "t-documents-table": {
+        "file-name": "Название файла",
+        "type": "Тип",
+        "size": "Размер",
+        "upload-date": "Дата загрузки",
+        "action": "Действие"
+    },
+    "t-activities": "Действия",
+    "t-activities-action": {
+        "new": "Новый",
+        "in-progress": "В процессе",
+        "completed": "Выполнено",
+        "out-delivery": "Без доставки"
+    },
     "t-apps": "Программы",
     "t-calendar": "Календарь",
     "t-chat": "Чат",
@@ -167,5 +182,33 @@
     "t-level-3.2": "Уровень 3.2",
     "t-landing": "Посадка",
     "t-password-create": "Пароль Создать",
-    "t-offline-page": "Офлайн-страница"
+    "t-offline-page": "Офлайн-страница",
+
+    "t-followers": "Подписчики",
+    "t-following": "Подписки",
+    "t-edit-profile": "Редактировать профиль",
+    "t-complete-profile": "Заполните профиль",
+    "t-info": "Информация",
+    "t-name": "Полное имя",
+    "t-phone": "Телефон",
+    "t-location": "Расположение",
+    "t-date-joining": "Дата регистрации",
+    "t-portfolio": "Портфолио",
+    "t-skills": "Навыки",
+    "t-suggestions": "Предложения",
+    "t-popular-posts": "Популярные записи",
+    "t-about": "Обо мне",
+    "t-recent-activity": "Последние действия",
+    "t-today": "Сегодня",
+    "t-weekly": "Неделя",
+    "t-monthly": "Месяц",
+    "t-action": {
+        "view": "Просмотр",
+        "edit": "Редактировать",
+        "delete": "Удалить",
+        "download": "Скачать"
+    },
+    "t-members": "Участники",
+    "t-last-update": "Последнее обновление",
+    "t-load-more": "Загрузить еще"
 }
